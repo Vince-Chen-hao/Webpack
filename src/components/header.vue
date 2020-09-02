@@ -2,7 +2,7 @@
     <div>
         <h2>I am header</h2>
     </div>
-</template>>
+</template>
 
 
 <script lang="ts" type="text/javascript">

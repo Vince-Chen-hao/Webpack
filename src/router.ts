@@ -37,7 +37,7 @@ export default new VueRouter({
       component: xxx // 對應的元件，本文件上面自訂的分頁元件名稱
     }, 
     {
-      path: '/', // 對應的虛擬路徑
+      path: '/home', // 對應的虛擬路徑
       component: home // 對應的元件，本文件上面自訂的分頁元件名稱
     }, 
 

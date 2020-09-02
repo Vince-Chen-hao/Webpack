@@ -1,32 +1,17 @@
 
 <template>
-  <div class="xxx-container">
-    <h1>欢迎来到xxx</h1>
-    <p>{{msg}}</p>
+  <div>
+    <p>{{description}}</p>
+    <img :src="src" class="photo">
   </div>
 </template>
 
-<script lang="ts" type="text/javascript">
-  export default {
-    data() {
-      return {
-        msg: '我是XXX组件'
-      }
-    },
+<script lang="ts" >
+import { Component, Vue } from 'vue-property-decorator';
 
-    methods:{
-
-      running(){
-        var people:string = 'vince is good'
-        var age:number = 23
-        var totoal:number = age+2
-        
-        this.msg = totoal
-      }
-    },
-
-    created(){
-      this.running();
-    }
-  }
+@Component
+export default class xxx extends Vue {
+  src: string = 'https://img2.vipcn.com/img2016/6/21/2016062150586477.jpg'
+  description: string = 'Saber-webbbbe'
+}
 </script>
